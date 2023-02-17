@@ -20,7 +20,6 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 # Display the table on the page.
 streamlit.dataframe(fruits_to_show)
 
-
 # Lesson 9
 streamlit.header("Fruityvice Fruit Advice!")
 
@@ -35,4 +34,4 @@ fruityvice_normalized = pd.json_normalize(fruityvice_response.json())
 # write your own comment - what does this do?
 streamlit.dataframe(fruityvice_normalized)
 
-
+import snowflake.connector
